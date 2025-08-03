@@ -8,7 +8,7 @@ open-graph:
 
 
 
-<img src="images/ibmec.png" alt="Advanced Econometrics" style="width: 100%;  border-radius: 15px; margin-bottom: 6px;">
+<img src="images/ibmec.png" alt="Microeconometria" style="width: 100%;  border-radius: 15px; margin-bottom: 6px;">
 
 
 O curso tem como objetivo introduzir os alunos às principais técnicas de inferência causal utilizadas
@@ -28,7 +28,7 @@ em economia, com ênfase na identificação e avaliação de efeitos causais em 
 **Nível:** Graduação\
 **Prerequisitos:** Econometria I e II
 
-<!-- **Course source code:** [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=flat&logo=github&logoColor=white)](https://github.com/vladislav-morozov/econometrics-2) \ -->
+[**Plano de Ensino**](/plano/Plano_Ensino.pdf) 
 <!-- **Applications in:** [![R](https://img.shields.io/badge/python-ffdd54?style=flat&logo=python&logoColor=3776AB)](https://www.python.org/) -->
 
 <!-- ### Em formato slide -->
