@@ -1,0 +1,80 @@
+project:
+  type: website
+  output-dir: ../docs/
+
+html-math-method: mathjax
+
+# filters:
+#   - diagram
+#   - reveal-header
+# diagram:
+#   engine:
+#     tikz:
+#       execpath: lualatex
+#       header-includes:
+#         - '\usepackage{adjustbox}'
+#         - '\usetikzlibrary{arrows,shapes.arrows,shapes.geometric,shapes.multipart,decorations.pathmorphing,positioning,swigs}'
+
+website:
+  title: "Microeconometria"
+  favicon: themes/favicon.ico
+  site-url: https://raphaelgouvea.com/IBM0288/
+  #repo-url: https://github.com/vladislav-morozov/econometrics-2/
+  repo-subdir: "src"
+  repo-actions: [edit, issue]
+  sidebar:
+    style: "floating"
+    search: true
+    tools:
+      - icon: person-arms-up
+        href: https://raphaelgouvea.com/
+  #    - icon: github
+  #      href: https://github.com/vladislav-morozov/
+  #    - icon: linkedin
+  #      href: https://www.linkedin.com/in/vladislavvmorozov/
+    contents:
+      - section: "Informações sobre o curso"
+        contents:
+        - slides/organizational/intro.qmd
+      #  - exercises/mock-exam.qmd
+      # - section: "Linear Regression II"
+      #   contents:
+      #   - slides/vector/vector-ols.qmd
+      #   - slides/vector/identification-inference.qmd
+      #   - slides/vector/ols-consistency.qmd
+      #   - slides/vector/ols-limit-distribution.qmd
+      #   - exercises/exercises-linear-asymptotic.qmd
+      # - section: "Asymptotic Inference"
+      #   contents:
+      #   - slides/vector/ols-inference.qmd
+      #   - slides/vector/ols-delta-method.qmd
+      #   - exercises/exercises-linear-inference.qmd
+      # - section: "Panel Data"
+      #   contents:
+      #   - slides/panel/data-types.qmd
+      #   - slides/panel/event-studies.qmd
+      #   - slides/panel/did.qmd
+      #   - slides/panel/fe.qmd
+      #   - slides/panel/mean-group.qmd
+      #   - exercises/exercises-panel.qmd
+      # - section: "Prediction"
+      #   contents:
+      #   - slides/prediction/intro-sl.qmd
+      #   - slides/prediction/learning-elements.qmd
+      #   - slides/prediction/pac-nfl-tradeoff.qmd
+      #   - slides/prediction/regression-pt1.qmd
+      #   - slides/prediction/regression-pt2.qmd
+      #   - slides/prediction/classification.qmd
+      #   - exercises/exercises-prediction.qmd
+
+execute:
+  freeze: auto  # re-render only when source changes
+
+format:
+  html:
+    include-in-header: themes/mathjax.html
+    theme:
+      light: [themes/ws_light.scss, themes/block.scss]
+      dark: [themes/ws_dark.scss, themes/block.scss]
+
+bibliography: eco.bib

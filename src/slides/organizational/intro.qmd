@@ -1,0 +1,236 @@
+---
+title: "Introdução"
+subtitle: "Microeconometria IBM0288"
+author: Raphael Gouvea  
+format:
+  revealjs:
+    include-in-header: 
+      text: |
+        <meta name="description" content="Introdução ao curso de Microeconometria."/> 
+    width: 1150
+    slide-number: true
+    sc-sb-title: true
+    incremental: true   
+    #logo: ../../themes/favicon.ico
+    footer: "Introdução ao Curso"
+    #footer-logo-link: "https://vladislav-morozov.github.io/econometrics-2/"
+    theme: ../../themes/slides_theme.scss
+    toc: TRUE
+    toc-depth: 2
+    toc-title: Conteúdo
+    transition: convex
+    transition-speed: fast
+slide-level: 4
+title-slide-attributes:
+    data-background-color: "#002555"
+    data-footer: " "
+# filters:
+#   - reveal-header
+embed-resources: true
+include-in-header: ../../themes/mathjax.html 
+highlight-style: tango
+open-graph:
+    description: "Introdução ao curso de Microeconometria" 
+---
+
+## Conteúdo e Motivação do Curso {background="#00100F"}
+
+#### Sobre o professor
+
+**Professor**: Raphael Gouvea
+
+-   Pesquisador do Instituto de Pesquisa Econômica Aplicada, Assessor Econômico na Câmara dos Deputadas.
+
+-   Professor Adjunto I do IBMEC.
+
+-   Email:
+
+    <p style="font-family: &#39;Courier New&#39;, Courier, monospace;">
+
+    raphael.gouvea\@professores.ibmec.edu.br
+
+    </p>
+
+-   Área de pesquisa: responder questões relacionadas a macroeconomia, economia internacional, mercado de trabalho e economia política a partir de técnicas de inferência causal
+
+### Sobre o curso: indo além de econometria I e II {background="#43464B"}
+
+#### Relembrando: Econometria I
+
+Econometria I conssite basicamente em estudar o modelo simplicficado: $$
+Y_{i} = \beta_1 + \beta_2 X_i^{(2)} + \dots + \beta_k X_i^{(k)} + U_i
+$$ onde:
+
+-   Amostra — dados de cross-section: uma observação por unidade $i$
+-   O modelo linear causal ($\E[U_i|X_i]=0$ ou um instrumento disponível)
+
+#### Relembrando: Econometria II
+
+Econometria II consiste basicamente em estudar o modelo simplicficado: $$
+Y_{t} = \beta_1 + \beta_2 X_t^{(2)} + \dots + \beta_k X_t^{(k)} + U_t
+$$ onde:
+
+-   Amostra — dados de séries temporais: uma observação por unidade de tempo $t$
+-   Foco em predição e não causalidade
+
+#### O que se entende por microeconometria neste curso?
+
+De modo direto, iremos avançar nas seguintes direções:
+
+-   trabalhar com mais tipos de dados: agrupamentos em corte transversal e dados em painel
+-   trabalhar com modelos em que a variável dependente é limitada
+-   enfoque em inferência causal e contrafactuais
+-   experimentos aleatórios e experimentos naturais
+
+#### Blocos principais do curso
+
+1.  Inferência causal e contrafactuais
+2.  Inferência causal baseada em regressões
+3.  Dados em painel e Dif-in-Dif
+4.  Variáveis Instrumentais
+5.  Regressão descontínua
+6.  Modelos com variável dependente limitada
+
+. . .
+
+Em todos os blocos teremos um enfoque bastante prático.
+
+## Logística do Curso {background="#00100F"}
+
+### Organização e Avaliações {background="#43464B"}
+
+#### Nossos encontros
+
+Duas aulas por semana:
+
+-   Segundas e Quartas de 9:50 às 11:40
+-   15 minutos de tolerância na entrada e na saída para aferição da chamada
+
+. . .
+
+<br>
+
+::: {style="border: 2px solid #ccc; padding: 9px; border-radius: 15px; margin-bottom: 10px;"}
+Toda e qualquer alteração será anunciada com a maior antecedência possível.
+:::
+
+#### Formato do Curso
+
+Curso baseado em aulas expositivas com dois formatos:
+
+-   Aulas expositivas cobrindo teoria e exemplos empíricos
+-   Aulas práticas em R
+
+. . .
+
+Participação ativa em sala encorajada! Sintam-se a vontade para perguntar/conversar antes/depois da aula.
+
+#### Avaliação
+
+::: {style="border: 2px solid #ccc; padding: 9px; border-radius: 15px; margin-bottom: 10px;"}
+Avaliações parciais e substitutivas serão realizadas em sala.
+:::
+
+<br>
+
+-   Data das provas: 29/09 (AP1), 17/11 (AP2) e 26/11 (AS)
+-   Não será permitida consulta a materiais de apoio.
+-   Preparação: leitura da bibliografia, materiais das aulas expositivas e lista de exercícios.
+
+### Materiais e Bibliografia {background="#43464B"}
+
+#### Materiais: aulas expositvas
+
+As aulas expositivas serão baseadas em slides
+
+<br>
+
+. . .
+
+Livros:
+
+-   O curso será baseado em várias referências
+-   Cada conjunto de slides apresentará as referências daquela aula
+-   Além das referências que constam no plano de ensino, leituras complementares serão disponibilizadas
+
+#### Materiais: aulas práticas
+
+As aulas práticas serão baseadas R
+
+<br>
+
+. . .
+
+Objetivos:
+
+-   Ensinar como implementar as técnicas estudadas na prática
+-   No final de cada aula prática, o aluno irá submeter a atividade realizada em sala
+
+#### Bibliografia básica
+
+:::::: columns
+::: {.column width="25%"}
+![](/images/book_covers/wooldridge_7a.png)
+
+@Wooldridge2020IntroductoryEconometricsModern
+:::
+
+::: {.column width="26%"}
+![](/images/book_covers/mastering_metrics.png)
+
+@angrist_mastering_2015
+:::
+
+::: {.column width="31%"}
+![](/images/book_covers/avaliacao_BID.png)
+
+@gertler_avaliacao_2018
+:::
+::::::
+
+#### Bibliografia complementar
+
+:::::: columns
+::: {.column width="25%"}
+![](/images/book_covers/cunningham-2021.jpg)
+
+@Cunningham2021CausalInferenceMixtape
+:::
+
+::: {.column width="25%"}
+![](/images/book_covers/mostly_harmless.png)
+
+@Angrist2009MostlyHarmlessEconometrics
+:::
+
+::: {.column width="28%"}
+![](/images/book_covers/r_for_datascience.png)
+
+@wicham_r_2023
+:::
+::::::
+
+<!-- #### Algumas referências em R -->
+
+<!-- :::::: columns -->
+<!-- ::: {.column width="30%"} -->
+<!-- ![](/images/book_covers/zingaro-2021.jpg) -->
+
+<!-- @Zingaro2021LearnCodeSolving -->
+<!-- ::: -->
+
+<!-- ::: {.column width="30%"} -->
+<!-- ![](/images/book_covers/lau-2023.jpeg) -->
+
+<!-- @Lau2023LearningDataScience -->
+<!-- ::: -->
+
+<!-- ::: {.column width="30%"} -->
+<!-- ![](/images/book_covers/heiss-2024.png) @Heiss2024UsingPythonIntroductory -->
+<!-- ::: -->
+<!-- :::::: -->
+
+#### References {.allowframebreaks visibility="uncounted"}
+
+::: {#refs}
+:::

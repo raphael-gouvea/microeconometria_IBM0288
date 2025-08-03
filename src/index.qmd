@@ -1,0 +1,104 @@
+---
+description: "Econometrics 2 covers theory and applications of causal inference and forecasting. Topics include linear and nonlinear models, panel data, and time series."
+open-graph:
+    description: "Econometrics 2 covers theory and applications of causal inference and forecasting. Topics include linear and nonlinear models, panel data, and time series." 
+---
+
+# IBM0288: Microeconometria
+
+
+
+<img src="images/ibmec.png" alt="Advanced Econometrics" style="width: 100%;  border-radius: 15px; margin-bottom: 6px;">
+
+
+O curso tem como objetivo introduzir os alunos às principais técnicas de inferência causal utilizadas
+em economia, com ênfase na identificação e avaliação de efeitos causais em contextos empíricos.
+
+
+## Informações sobre o curso
+
+**Professor:** Raphael Gouvea\
+**Email:** [raphael.goouvea [at] professores.ibmec.edu.br](mailto:raphael.gouvea@professores.ibmec.edu.br)\
+<!-- **Course Website:** eCampus and this website\ -->
+**Aulas:** Segundas e Quartas de 09:50 às 11:40\
+
+<!-- **Schedule Changes and Holidays**: See eCampus and BASIS\ -->
+<!-- **DOI**: [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15463535-gold)](https://doi.org/10.5281/zenodo.15463535) -->
+
+**Nível:** Graduação\
+**Prerequisitos:** Econometria I e II
+
+<!-- **Course source code:** [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=flat&logo=github&logoColor=white)](https://github.com/vladislav-morozov/econometrics-2) \ -->
+<!-- **Applications in:** [![R](https://img.shields.io/badge/python-ffdd54?style=flat&logo=python&logoColor=3776AB)](https://www.python.org/) -->
+
+<!-- ### Em formato slide -->
+
+
+<!-- {{< revealjs file="slides/organizational/intro.html" height="500px" class="ratio ratio-16x9" >}} -->
+
+
+## Conteúdo
+
+
+### Conteúdo
+
+O curso está estruturado da seguinte maneira:
+
+1. Introdução a inferência causal.
+2. Inferência causal baseada em regressão.
+3. Agrupamento de cortes transversais e painel
+4. Estimador de Diferenças em Diferenças
+5. Variáveis Instrumentais
+6. Regressão descontínua
+7. Modelos com variável dependente limitada
+
+---
+
+
+## Bibliografia
+
+**Bibliográfia Básica:** principais referências do curso:
+
+- Wooldridge, J.M. Introdução à econometria: uma abordagem moderna. 7a edição. Ed. Cengage.2023.
+
+- Gertler, P. J., Martínez, S., Premand, P., Rawlings, L. B., & Vermeersch, Chirstel M J. Avaliação de
+Impacto na Prática (2a Edição). Banco Mundial. 2018.
+
+- Angrist, D. J., Pischke, J. Mastering metrics: the path from cause to effect. 1st Edition. Princeton
+University Press. 2015.
+
+---
+
+**Bibliográfia Complementar:** apoio em R e referências mais avançadas:
+
+- Wicham, H., Çetinkaya-Rundel, M., Grolemund, G. R para ciência de dados. 2a Edição.
+
+- Healy, K. Data visualization: a pratical introduction. Princeton University Press.
+
+- Angrist, D. J., Pischke, J. Mostly Harmless Econometrics: An Empiricist's Companion. 1st Edition. Princeton University Press. 2009.
+
+- Cunningham, S. Causal Inference: the mixtape. Yale University Press. 1st Edition. 2021.
+
+---
+
+**Observação:** Ao longo do semestre, será disponibilizado um conjunto de leituras complementares em diversos formatos: livros, artigos científicos, blog posts, matérias em jornais, etc.
+
+## Diretrizes do Curso
+
+
+### Integridade Acadêmica:
+
+Espera-se integridade absoluta do estudante em todas as atividades acadêmicas. Integridade implica adesão firme a um conjunto de valores, sendo os mais essenciais à comunidade acadêmica baseados no conceito de honestidade em relação ao próprio esforço intelectual e ao dos outros, bem como na busca livre e aberta pelo conhecimento e na discussão em sala de aula. A integridade acadêmica é esperada não apenas em situações formais da disciplina, mas em todos os relacionamentos e interações vinculados ao processo educacional. A entrega de um trabalho por parte de um estudante indica que o trabalho é de sua autoria e toda assistência externa deve ser devidamente reconhecida.
+
+### Uso de IA
+As diretrizes sobre o uso de ferramentas de inteligência artificial generativa (IA) serão definidas caso a caso, conforme cada atividade. Essas diretrizes serão comunicadas de forma clara juntamente com as demais informações específicas de cada tarefa. Independentemente de o uso da IA generativa ser permitido ou proibido em uma determinada atividade, é fundamental que você siga a política da disciplina sobre integridade acadêmica. Se tiver dúvidas sobre qualquer diretriz, consulte o professor antes de usar a tecnologia ou concluir a tarefa.
+
+
+### Uso de Telas
+O uso de computadores, tablets, celulares e quaisquer outros dispositivos similares está proibido durante as aulas expositivas. Há diversas pesquisas convincentes (veja, por exemplo, [aqui](https://www.nytimes.com/2017/11/22/business/laptops-not-during-lecture-or-meeting.html?module=inline), [aqui](https://www.newyorker.com/tech/annals-of-technology/the-case-for-banning-laptops-in-the-classroom), [aqui](https://www.npr.org/2016/04/17/474525392/attention-students-put-your-laptops-away) ou [aqui](https://www.scientificamerican.com/article/a-learning-secret-don-t-take-notes-with-a-laptop/)) mostrando que estudantes universitários aprendem menos e obtêm notas piores quando utilizam computadores, tablets ou celulares durante as aulas, e que o uso de computadores por um estudante também prejudica a aprendizagem dos colegas ao redor. Minha experiência pessoal confirma isso. Esses efeitos negativos ocorrem mesmo quando os computadores são utilizados exclusivamente para anotações (o que raramente acontece). Diferentemente das aulas expositivas, o uso de computadores (mas não de celulares!) será obrigatório nas aulas práticas, pois você irá precisar dele para realização das atividades.
+Se você tiver um motivo válido para utilizar seu computador ou tablet em sala (por exemplo, uma deficiência de aprendizagem), podemos discutir uma exceção.
+
+##  Suporte ao Aluno
+O Ibmec é comprometido com a equidade e a inclusão dos nossos alunos. Em caso de dificuldades acadêmicas, emocionais ou de adaptação, os estudantes podem contar com o apoio do setor CASA, que oferece atendimento personalizado ao longo da trajetória universitária. Para mais informações:
+[https://blog.ibmec.br/noticias/suporte-ao-aluno-com-o-setor-casa-ibmec-insights/](https://blog.ibmec.br/noticias/suporte-ao-aluno-com-o-setor-casa-ibmec-insights/)
+
