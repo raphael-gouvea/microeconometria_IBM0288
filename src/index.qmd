@@ -18,7 +18,7 @@ em economia, com ênfase na identificação e avaliação de efeitos causais em 
 ## Informações sobre o curso
 
 **Professor:** Raphael Gouvea\
-**Email:** [raphael.goouvea [at] professores.ibmec.edu.br](mailto:raphael.gouvea@professores.ibmec.edu.br)\
+**Email:** [raphael.gouvea [at] professores.ibmec.edu.br](mailto:raphael.gouvea@professores.ibmec.edu.br)\
 <!-- **Course Website:** eCampus and this website\ -->
 **Aulas:** Segundas e Quartas de 09:50 às 11:40\
 
