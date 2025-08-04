@@ -11,7 +11,7 @@ format:
     slide-number: true
     sc-sb-title: true
     incremental: true   
-    #logo: ../../themes/favicon.ico
+    logo: ../../themes/ibmec.png
     footer: "Introdução ao Curso"
     #footer-logo-link: "https://vladislav-morozov.github.io/econometrics-2/"
     theme: ../../themes/slides_theme.scss
@@ -33,7 +33,7 @@ open-graph:
     description: "Introdução ao curso de Microeconometria" 
 ---
 
-## Conteúdo e Motivação do Curso {background="#00100F"}
+## Introdução ao Curso {background="#00100F"}
 
 #### Sobre o professor
 
@@ -53,47 +53,16 @@ open-graph:
 
 -   Área de pesquisa: responder questões relacionadas a macroeconomia, economia internacional, mercado de trabalho e economia política a partir de técnicas de inferência causal
 
-### Sobre o curso: indo além de econometria I e II {background="#43464B"}
+#### Nos conhecendo melhor
 
-#### Relembrando: Econometria I
+- Nome
 
-Econometria I conssite basicamente em estudar o modelo simplicficado: $$
-Y_{i} = \beta_1 + \beta_2 X_i^{(2)} + \dots + \beta_k X_i^{(k)} + U_i
-$$ onde:
+- Áreas de interesse
 
--   Amostra — dados de cross-section: uma observação por unidade $i$
--   O modelo linear causal ($\E[U_i|X_i]=0$ ou um instrumento disponível)
+- O que você espera do curso
 
-#### Relembrando: Econometria II
+- Uma pergunta que gostaria de responder
 
-Econometria II consiste basicamente em estudar o modelo simplicficado: $$
-Y_{t} = \beta_1 + \beta_2 X_t^{(2)} + \dots + \beta_k X_t^{(k)} + U_t
-$$ onde:
-
--   Amostra — dados de séries temporais: uma observação por unidade de tempo $t$
--   Foco em predição e não causalidade
-
-#### O que se entende por microeconometria neste curso?
-
-De modo direto, iremos avançar nas seguintes direções:
-
--   trabalhar com mais tipos de dados: agrupamentos em corte transversal e dados em painel
--   trabalhar com modelos em que a variável dependente é limitada
--   enfoque em inferência causal e contrafactuais
--   experimentos aleatórios e experimentos naturais
-
-#### Blocos principais do curso
-
-1.  Inferência causal e contrafactuais
-2.  Inferência causal baseada em regressões
-3.  Dados em painel e Dif-in-Dif
-4.  Variáveis Instrumentais
-5.  Regressão descontínua
-6.  Modelos com variável dependente limitada
-
-. . .
-
-Em todos os blocos teremos um enfoque bastante prático.
 
 ## Logística do Curso {background="#00100F"}
 
@@ -136,6 +105,12 @@ Avaliações parciais e substitutivas serão realizadas em sala.
 -   Data das provas: 29/09 (AP1), 17/11 (AP2) e 26/11 (AS)
 -   Não será permitida consulta a materiais de apoio.
 -   Preparação: leitura da bibliografia, materiais das aulas expositivas e lista de exercícios.
+
+. . .
+
+::: {style="border: 2px solid #ccc; padding: 9px; border-radius: 15px; margin-bottom: 10px; text-align: center"}
+[**Plano de Ensino Completo**](/plano/Plano_Ensino.pdf)
+:::
 
 ### Materiais e Bibliografia {background="#43464B"}
 
@@ -229,6 +204,49 @@ Objetivos:
 <!-- ![](/images/book_covers/heiss-2024.png) @Heiss2024UsingPythonIntroductory -->
 <!-- ::: -->
 <!-- :::::: -->
+
+
+### Sobre o curso: indo além de econometria I e II {background="#43464B"}
+
+#### Relembrando: Econometria I
+
+Econometria I conssite basicamente em estudar o modelo simplicficado: $$
+Y_{i} = \beta_1 + \beta_2 X_i^{(2)} + \dots + \beta_k X_i^{(k)} + U_i
+$$ onde:
+
+-   Amostra — dados de cross-section: uma observação por unidade $i$
+-   O modelo linear causal ($\E[U_i|X_i]=0$ ou um instrumento disponível)
+
+#### Relembrando: Econometria II
+
+Econometria II consiste basicamente em estudar o modelo simplicficado: $$
+Y_{t} = \beta_1 + \beta_2 X_t^{(2)} + \dots + \beta_k X_t^{(k)} + U_t
+$$ onde:
+
+-   Amostra — dados de séries temporais: uma observação por unidade de tempo $t$
+-   Foco em predição e não causalidade
+
+#### O que se entende por microeconometria neste curso?
+
+De modo direto, iremos avançar nas seguintes direções:
+
+-   trabalhar com mais tipos de dados: agrupamentos em corte transversal e dados em painel
+-   trabalhar com modelos em que a variável dependente é limitada
+-   enfoque em inferência causal e contrafactuais
+-   experimentos aleatórios e experimentos naturais
+
+#### Blocos principais do curso
+
+1.  Inferência causal e contrafactuais
+2.  Inferência causal baseada em regressões
+3.  Dados em painel e Dif-in-Dif
+4.  Variáveis Instrumentais
+5.  Regressão descontínua
+6.  Modelos com variável dependente limitada
+
+. . .
+
+Em todos os blocos teremos um enfoque bastante prático.
 
 #### References {.allowframebreaks visibility="uncounted"}
 
