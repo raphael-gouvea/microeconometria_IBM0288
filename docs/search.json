@@ -55,12 +55,67 @@
   {
     "objectID": "slides/organizational/intro.html#logística-do-curso",
     "href": "slides/organizational/intro.html#logística-do-curso",
-    "title": "Introdução",
+    "title": "Diretrizes e plano de ensino",
     "section": "Logística do Curso",
     "text": "Logística do Curso",
     "crumbs": [
       "Informações sobre o curso",
-      "Introdução"
+      "Diretrizes e plano de ensino"
+    ]
+  },
+  {
+    "objectID": "slides/inferencia_causal/inference.html#introdução",
+    "href": "slides/inferencia_causal/inference.html#introdução",
+    "title": "Causalidade e resultados potenciais",
+    "section": "Introdução",
+    "text": "Introdução",
+    "crumbs": [
+      "Introdução à inferência causal",
+      "Causalidade e resultados potenciais"
+    ]
+  },
+  {
+    "objectID": "slides/inferencia_causal/inference.html#conceitos-e-definições-básicas",
+    "href": "slides/inferencia_causal/inference.html#conceitos-e-definições-básicas",
+    "title": "Causalidade e resultados potenciais",
+    "section": "Conceitos e definições básicas",
+    "text": "Conceitos e definições básicas",
+    "crumbs": [
+      "Introdução à inferência causal",
+      "Causalidade e resultados potenciais"
+    ]
+  },
+  {
+    "objectID": "slides/inferencia_causal/inference.html#resultados-potenciais-modelo-de-rubin",
+    "href": "slides/inferencia_causal/inference.html#resultados-potenciais-modelo-de-rubin",
+    "title": "Causalidade e resultados potenciais",
+    "section": "Resultados Potenciais: modelo de Rubin",
+    "text": "Resultados Potenciais: modelo de Rubin",
+    "crumbs": [
+      "Introdução à inferência causal",
+      "Causalidade e resultados potenciais"
+    ]
+  },
+  {
+    "objectID": "slides/organizational/intro.html#diretrizes-e-plano-de-ensino",
+    "href": "slides/organizational/intro.html#diretrizes-e-plano-de-ensino",
+    "title": "Diretrizes e plano de ensino",
+    "section": "Diretrizes e plano de ensino",
+    "text": "Diretrizes e plano de ensino",
+    "crumbs": [
+      "Informações sobre o curso",
+      "Diretrizes e plano de ensino"
+    ]
+  },
+  {
+    "objectID": "slides/inferencia_causal/inference.html#viés-de-seleção",
+    "href": "slides/inferencia_causal/inference.html#viés-de-seleção",
+    "title": "Causalidade e resultados potenciais",
+    "section": "Viés de seleção",
+    "text": "Viés de seleção",
+    "crumbs": [
+      "Introdução à inferência causal",
+      "Causalidade e resultados potenciais"
     ]
   }
 ]

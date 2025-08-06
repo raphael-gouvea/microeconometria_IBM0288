@@ -37,14 +37,14 @@ website:
         contents:
         - slides/organizational/intro.qmd
       #  - exercises/mock-exam.qmd
-      # - section: "Linear Regression II"
-      #   contents:
-      #   - slides/vector/vector-ols.qmd
-      #   - slides/vector/identification-inference.qmd
+      - section: "Introdução à inferência causal"
+        contents:
+        - slides/inferencia_causal/inference.qmd
+        # - slides/inferencia_causal/experiments.qmd
       #   - slides/vector/ols-consistency.qmd
       #   - slides/vector/ols-limit-distribution.qmd
       #   - exercises/exercises-linear-asymptotic.qmd
-      # - section: "Asymptotic Inference"
+      # # - section: "Asymptotic Inference"
       #   contents:
       #   - slides/vector/ols-inference.qmd
       #   - slides/vector/ols-delta-method.qmd

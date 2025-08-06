@@ -1,5 +1,5 @@
 ---
-title: "Introdução"
+title: "Diretrizes e plano de ensino"
 subtitle: "Microeconometria IBM0288"
 author: Raphael Gouvea  
 format:
@@ -33,7 +33,7 @@ open-graph:
     description: "Introdução ao curso de Microeconometria" 
 ---
 
-## Introdução ao Curso {background="#00100F"}
+## Diretrizes e plano de ensino {background="#00100F"}
 
 #### Sobre o professor
 

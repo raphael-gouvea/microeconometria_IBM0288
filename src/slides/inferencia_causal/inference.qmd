@@ -1,0 +1,259 @@
+---
+title: "Causalidade e resultados potenciais"
+subtitle: "Conceitos básicos"
+author: Raphael Gouvea
+lang: pt
+format:
+  revealjs:
+    include-in-header: 
+      text: |
+        <meta name="description" content="Explora conceitos de inferência causal e contrafactuais, apresentando o modelo de resultado potenciais."/> 
+    width: 1150
+    slide-number: true
+    sc-sb-title: true
+    incremental: true   
+    logo: ../../themes/ibmec.png
+    footer: "Introdução a inferência causal"
+    #footer-logo-link: "https://vladislav-morozov.github.io/econometrics-2/"
+    theme: ../../themes/slides_theme.scss
+    toc: TRUE
+    toc-depth: 2
+    toc-title: Conteúdo
+    transition: convex
+    transition-speed: fast
+slide-level: 4
+title-slide-attributes:
+    data-background-color: "#002555"
+    data-footer: " "
+# filters:
+#   - reveal-header
+embed-resources: true
+include-in-header: ../../themes/mathjax.html 
+highlight-style: tango
+open-graph:
+    description: "Explora conceitos de inferência causal e contrafactuais, apresentando o modelo de resultado potenciais." 
+---
+
+## Introdução {background="#00100F"}
+
+### Plano da aula {background="#43464B" visibility="uncounted"}
+
+#### Objetivos de aprendizado
+
+Essa aula apresenta os principais conceitos e definições sobre inferência causal
+
+<br>
+
+Ao final, o aluno deve ser capaz de:
+
+-   entender o que se entende por inferência causal
+-   entender o conceito de contrafacutal
+-   entender o modelo de resultados potenciais
+
+#### Referências
+
+::: nonincremental
+-   Capítulo 1 de @Cunningham2021CausalInferenceMixtape
+-   Capítulo 1 de @angrist_mastering_2015
+-   Capítulo 3 de @gertler_avaliacao_2018
+:::
+
+### Identificação e inferência {background="#43464B"}
+
+#### Ojetivo geral
+
+<!-- Objetivo geral da estatística: -->
+
+<br>
+
+::: {style="border: 2px solid #ccc; padding: 9px; border-radius: 15px; margin-bottom: 10px;"}
+"Dizer algo" sobre um "parâmetro" de interesse "baseado em dados."
+:::
+
+<br>
+
+Qual "parâmetro"? O que é "algo"? Que tipo de "dados" e quanto?
+
+#### Parâmetros de interesse
+
+Qual parâmetro de interesse depende do contexto:
+
+-   Causalidade:
+    -   Efeitos de tratamento: médias, variâncias, ...
+    -   Aspectos estruturais de modelos econômicos: eslaticidades, multiplicadores, ...
+-   Previsão:
+    -   Previsão do PIB, ...
+    -   Se um paciente tem uma doença, ...
+
+#### Tipo de perguntas
+
+E sobre o "algo"?
+
+. . .
+
+<br>
+
+Três exemplos de perguntas a serem respondidas:
+
+1.  É realmente possível aprender sobre o parâmetro de interesse?
+2.  Se tivermos uma estimativa, quão seguros estamos quanto a ela?
+3.  O parâmetro satisfaz alguma restrição? (igual a 0, positivo, etc.)
+
+## Conceitos e definições básicas {background="#00100F"}
+
+### Inferência causal {background="#43464B"}
+
+#### Definição
+
+::: {.callout-important appearance="minimal"}
+Causal inference is the leveraging of **theory** and deep **knowledge of institutional details** to **estimate the impact** of events and choices on a given **outcome of interest**. [@Cunningham2021CausalInferenceMixtape, p. 4.]
+:::
+
+#### Exemplo de visão ingênua sobre causalidade
+
+::: {style="font-size: 75%;"}
+-   Alienígenas estimam um modelo mostrando que existe correlação sistemática entre mortes por COVID e ventiladores mecânicos.
+:::
+
+::: {style="font-size: 75%;"}
+-   Eles concluem que os médicos estão matando os pacientes com os ventiladores. Logo, eles vêm à Terra para libertar os pacientes, piorando a situação.
+:::
+
+::: {style="font-size: 75%;"}
+-   O erro dos alienígenas foi que eles confundiram correlação com causalidade. Pior que isso: eles não entenderam como o mundo funciona.
+:::
+
+. . .
+
+::: {.callout-important appearance="minimal"}
+Nós somos os alienígenas nas nossas pesquisas!
+:::
+
+#### Causalidade e correlação não são a mesma coisa
+
+-   Pergunta causal: "Se o médico colocar o paciente no ventilador mecânico $(D)$, os sintomas do paciente irão melhorar $(Y)$?"
+
+-   Correlação: 
+$$
+    \rho_{D,Y} = \frac{\mathrm{Cov}(D, Y)}{\sigma_D \sigma_Y}
+$$
+- Erros são extrapolados em modelos preditivos que não se baseiam em abordagens causais.
+
+#### Antecedência não significa causalidade 
+
+- Toda manhã o galo canta quando o sol nasce
+
+- O cantar do galo fez o sol nascer? ou O nascer do sol fez o galo cantar?
+
+- E se uma raposa comer o galo?
+
+
+#### Causalidade pode mascarar correlações{.nostretch}
+
+![](images/scottboat.jpg){width="60%"}
+
+. . .
+
+::: {.callout-important appearance="minimal"}
+o que aconteceria se o BACEN conseguisse antecipar e otimizar com 100% de precisão a política monetária?
+:::
+
+## Resultados Potenciais: modelo de Rubin {background="#00100F"}
+
+### O caminho não escolhido
+
+![](images/diverged_roads.png)
+
+#### Tudo o mais constante...
+
+Qual o impacto ou efeito causal de um determinado programa sobre uma variável de resultado de interesse?
+
+- Necessário observar **a mesma unidade de observação** (pessoa, firma, etc) em dois estados da natureza: tratado e não tratado.
+
+- Porém, só é possível observar **um dos estados** para cada unidade!
+
+  - pelo menos não ao mesmo tempo e exatamente sob as mesmas circunstâncias.
+
+
+#### Exemplo 1: Plano de saúde nos EUA
+
+![](images/mastering_table_1_1.png)
+
+#### Resultados potenciais
+
+<div style="border: 2px solid #ccc; padding: 9px; border-radius: 15px; margin-bottom: 10px;">
+ 
+::: {#def-potential-outcomes} 
+
+Defina as seguintes variáveis:
+
+$Y_{0i} =$ Resultado potencial sem tratamento
+
+$Y_{1i} =$ Resultado potencial com tratamento
+
+O efeito causal do programa é igual a diferença entre os resultados potenciais $Y_{1i}-Y_{0i}$.
+
+:::
+
+</div>
+
+- $Y_i =$ Variável de interessse observada 
+
+#### Um exemplo simplificado
+
+
+|  | Kuzdar | Maria |
+|----------|----------|----------|
+| Resultado Potencial sem plano: $Y_{0i}$ | 3 | 5 |
+| Resultado Potencial sem plano: $Y_{1i}$ | 4 | 5 |
+| Tratamento: $D_i$ | 1 | 0 |
+| Condição de saúde observada | 4 | 5 |
+| Efeito tratamento | 1 | 0 
+
+## Viés de seleção {background="#00100F"}
+
+#### Visualizando o viés de seleção
+
+::: {style="font-size: 75%;"}
+<div style="border: 2px solid #ccc; padding: 9px; border-radius: 15px; margin-bottom: 10px;">
+
+Comparação entre variáveis de interesse:
+
+$$
+\begin{aligned}
+Y_{K} - Y_{M} &= Y_{1,K} - Y_{0,M} 
+\end{aligned}
+$$
+
+</div> 
+:::
+
+. . .
+
+::: {style="font-size: 75%;"}
+<div style="border: 2px solid #ccc; padding: 9px; border-radius: 15px; margin-bottom: 10px;">
+
+
+Mostrando viés de seleção:
+
+$$
+\begin{aligned}
+Y_{K} - Y_{M} &= Y_{1,K} - Y_{0,M} \\
+              &= 
+              \underbrace{Y_{1,K} - Y_{0,K}}_{\text{1}} 
+              + 
+              \underbrace{Y_{0,K} - Y_{0,M}}_{\text{-2}}
+\end{aligned}
+$$
+</div> 
+:::
+
+ - Primeiro termo  =  <span class="highlight">efeito causal ou tratamento</span>
+
+ - Segundo termo  =  <span class="highlight">viés de seleção</span>
+
+
+#### Referências {.allowframebreaks visibility="uncounted"}
+
+::: {#refs}
+:::
